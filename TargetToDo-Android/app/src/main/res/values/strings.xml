@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TargetToDo-Android</string>
+    <string name="todo">待办</string>
+    <string name="target">目标</string>
+    <string name="clock">番茄钟</string>
+    <string name="chart">统计</string>
 </resources>

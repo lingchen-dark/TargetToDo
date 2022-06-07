@@ -2,6 +2,7 @@ package com.juan.target_todo.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.juan.target_todo.R
 import com.juan.target_todo.databinding.ActivityMainBinding
 
 /**
@@ -19,5 +20,12 @@ class MainActivity : AppCompatActivity() {
         // 使用val表示一个final的变量, kotlin的get和set方法可以省略成成员变量的写法
         val viewRoot = mainBinding.root
         setContentView(viewRoot)
+        initView()
+    }
+    private fun initView() { 
+        mainBinding.tvTodo.text = getString(R.string.todo)
+        mainBinding.tvTarget.text = getString(R.string.target)
+        mainBinding.tvClock.text = getString(R.string.clock)
+        mainBinding.tvChart.text = getString(R.string.chart)
     }
 }
